@@ -130,7 +130,7 @@ class Veterinaria:
 
                         fecha = datetime(anio, mes, dia)
                         if fecha < hoy:
-                            print("⚠️ La fecha no puede ser menor a hoy.")
+                            print(" La fecha no puede ser menor a hoy.")
                             continue
 
                         fecha_str = fecha.strftime("%Y-%m-%d")
@@ -158,7 +158,7 @@ class Veterinaria:
                 if confirm == 's':
                     cita = CitaMedica(fecha_str, motivo, diagnostico)
                     mascota.agregar_cita(cita)
-                    print("✅ Cita registrada.")
+                    print(" Cita registrada.")
                 else:
                     print("Cita cancelada.")
             else:
@@ -246,7 +246,7 @@ def main():
         elif opcion == "5":
             sistema.mostrar_clientes_y_mascotas()
         elif opcion == "0":
-            print("👋 ¡Gracias por usar el sistema veterinario!")
+            print(" ¡Gracias por usar el sistema veterinario!")
             break
         else:
             print(" Esta opción no es válida.")
