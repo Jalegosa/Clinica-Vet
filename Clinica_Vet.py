@@ -81,7 +81,7 @@ class Veterinaria:
             if confirm == 'si':
                 cliente = Cliente(nombre, telefono, correo)
                 self.__clientes.append(cliente)
-                print("✅ Cliente registrado.")
+                print(" Cliente registrado.")
             else:
                 print(" Registro cancelado.")
 
